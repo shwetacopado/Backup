@@ -3563,6 +3563,11 @@
             <isRequired>false</isRequired>
         </availableFields>
         <availableFields>
+            <field>copado__Story_Points_SFDC__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
             <field>SystemModstamp</field>
             <isFieldManaged>false</isFieldManaged>
             <isRequired>false</isRequired>
@@ -3640,11 +3645,6 @@
         </displayedFields>
         <displayedFields>
             <field>copado__Test_Script_Owner__c</field>
-            <isFieldManaged>false</isFieldManaged>
-            <isRequired>false</isRequired>
-        </displayedFields>
-        <displayedFields>
-            <field>copado__Story_Points_SFDC__c</field>
             <isFieldManaged>false</isFieldManaged>
             <isRequired>false</isRequired>
         </displayedFields>
@@ -6757,6 +6757,7 @@ IMAGE(&quot;/img/samples/color_yellow.gif&quot;, &quot;white&quot;, 15,
         <columns>copado__Org_Credential__c</columns>
         <columns>CREATED_DATE</columns>
         <columns>copado__Promote_Change__c</columns>
+        <columns>copado__Release__c</columns>
         <filterScope>Everything</filterScope>
         <filters>
             <field>RECORDTYPE</field>
@@ -8583,6 +8584,9 @@ IMAGE(&quot;/img/samples/color_yellow.gif&quot;, &quot;white&quot;, 15,
         <customTabListAdditionalFields>copado__Project__c</customTabListAdditionalFields>
         <listViewButtons>copado__Assign_to_Release</listViewButtons>
         <listViewButtons>copado__Import_to_User_Story</listViewButtons>
+        <listViewButtons>copado__Create_Bundle</listViewButtons>
+        <listViewButtons>User_Story_Bundle</listViewButtons>
+        <listViewButtons>copado__Mass_Add_User_Stories_Sprint</listViewButtons>
         <lookupDialogsAdditionalFields>copado__User_Story_Title__c</lookupDialogsAdditionalFields>
         <lookupDialogsAdditionalFields>copado__userStory_Role__c</lookupDialogsAdditionalFields>
         <lookupDialogsAdditionalFields>copado__userStory_need__c</lookupDialogsAdditionalFields>
@@ -8596,6 +8600,8 @@ IMAGE(&quot;/img/samples/color_yellow.gif&quot;, &quot;white&quot;, 15,
         <searchResultsAdditionalFields>copado__Story_Points_SFDC__c</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>copado__Story_Points_Other__c</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>copado__Status__c</searchResultsAdditionalFields>
+        <searchResultsCustomButtons>User_Story_Bundle</searchResultsCustomButtons>
+        <searchResultsCustomButtons>copado__Create_Bundle</searchResultsCustomButtons>
     </searchLayouts>
     <sharingModel>ReadWrite</sharingModel>
     <validationRules>
@@ -8607,7 +8613,7 @@ IMAGE(&quot;/img/samples/color_yellow.gif&quot;, &quot;white&quot;, 15,
     </validationRules>
     <validationRules>
         <fullName>Pull_Request_Not_Approved</fullName>
-        <active>true</active>
+        <active>false</active>
         <description>This VR checks the field value of &quot;Pull Request Approved&quot; field on update on change of field Promte and Deploy</description>
         <errorConditionFormula>AND(
 copado__Has_Apex_Code__c = true,
@@ -8627,7 +8633,7 @@ copado__Pull_Requests_Approved__c = false
     </validationRules>
     <validationRules>
         <fullName>SCA_Not_Pased</fullName>
-        <active>true</active>
+        <active>false</active>
         <errorConditionFormula>AND(
 copado__Has_Apex_Code__c = true,
     OR(
@@ -8646,7 +8652,7 @@ SCA_Passed__c = false
     </validationRules>
     <validationRules>
         <fullName>Validation_Passed</fullName>
-        <active>true</active>
+        <active>false</active>
         <description>Run the rule when the validation is not passed.</description>
         <errorConditionFormula>AND(
  OR(

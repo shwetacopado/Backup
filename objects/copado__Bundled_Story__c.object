@@ -603,6 +603,11 @@
         <type>Lookup</type>
     </fields>
     <label>Bundled Story</label>
+    <listViews>
+        <fullName>All</fullName>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
     <nameField>
         <displayFormat>BS-{0000000}</displayFormat>
         <label>Bundled Story Name</label>

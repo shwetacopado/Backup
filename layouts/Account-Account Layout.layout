@@ -255,14 +255,6 @@
         <relatedList>RelatedOpportunityList</relatedList>
     </relatedLists>
     <relatedLists>
-        <fields>CAMPAIGN.NAME</fields>
-        <fields>OPPORTUNITY.NAME</fields>
-        <fields>OPPORTUNITY.AMOUNT</fields>
-        <fields>REVENUE_SHARE</fields>
-        <fields>CONTACT.NAME</fields>
-        <relatedList>RelatedCampaignInfluence2List</relatedList>
-    </relatedLists>
-    <relatedLists>
         <fields>CONTRACT.CONTRACT_NUMBER</fields>
         <fields>CONTRACT.NAME</fields>
         <fields>CONTRACT.START_DATE</fields>

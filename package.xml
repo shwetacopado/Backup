@@ -17,6 +17,7 @@
         <members>Case</members>
         <members>Chatter</members>
         <members>ChatterEmailsMD</members>
+        <members>Commerce</members>
         <members>Communities</members>
         <members>Company</members>
         <members>ConnectedApp</members>
@@ -33,6 +34,7 @@
         <members>EmailAdministration</members>
         <members>EmailIntegration</members>
         <members>EmailTemplate</members>
+        <members>EmployeeFieldAccess</members>
         <members>EmployeeUser</members>
         <members>EncryptionKey</members>
         <members>EnhancedNotes</members>
@@ -55,6 +57,7 @@
         <members>LeadConfig</members>
         <members>LightningExperience</members>
         <members>Macro</members>
+        <members>MailMerge</members>
         <members>MapsAndLocation</members>
         <members>Meetings</members>
         <members>Mobile</members>
@@ -104,5 +107,5 @@
         <members>WorkDotCom</members>
         <name>Settings</name>
     </types>
-    <version>51.0</version>
+    <version>52.0</version>
 </Package>

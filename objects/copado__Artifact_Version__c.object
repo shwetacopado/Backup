@@ -397,6 +397,11 @@
         <unique>false</unique>
     </fields>
     <label>Package Version</label>
+    <listViews>
+        <fullName>All</fullName>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
     <nameField>
         <label>Package Version Name</label>
         <type>Text</type>

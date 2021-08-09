@@ -8,13 +8,6 @@
                     <valueList>
                         <valueListItems>
                             <value>CustomButton.copado__Environment__c.copado__Find_Replace_Rule_Editor</value>
-                            <visibilityRule>
-                                <criteria>
-                                    <leftValue>{!Record.copado__Platform__c}</leftValue>
-                                    <operator>EQUAL</operator>
-                                    <rightValue>Salesforce</rightValue>
-                                </criteria>
-                            </visibilityRule>
                         </valueListItems>
                         <valueListItems>
                             <value>Edit</value>
@@ -1127,6 +1120,31 @@
                 <componentInstanceProperties>
                     <name>relatedListApiName</name>
                     <value>copado__Org_Credentials__r</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>relatedListComponentOverride</name>
+                    <value>NONE</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>rowsToDisplay</name>
+                    <value>10</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>showActionBar</name>
+                    <value>true</value>
+                </componentInstanceProperties>
+                <componentName>force:relatedListSingleContainer</componentName>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>parentFieldApiName</name>
+                    <value>copado__Environment__c.Id</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>relatedListApiName</name>
+                    <value>copado__Environmental_Variables__r</value>
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>relatedListComponentOverride</name>
